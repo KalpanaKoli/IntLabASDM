@@ -1,0 +1,96 @@
+cat p1echo "enter the value for two variables"read a becho $a and $bif [ $a -eq $b ]thenecho $a and $b are equalelse if [ $a -gt $b ]then        echo "a is greater=$a"else        echo "b is greater=$b"fifiecho "end of if"echo "end of program"
+
+
+
+
+
+
+Q4. Enter the basic salary .
+
+If the basic salary is within 2000 to 5000 then his DA is 50% of basic and hra is 10%
+
+If the basic salary is within 5001 to 15000 then his DA is 60% of basic and hra is 20%
+
+If above 15000 then then his DA is 70% and hra is 30%
+
+Display the total salary of the employee.
+
+
+
+
+
+
+
+
+echo "enter the basic salary"
+
+read sal
+
+echo "the salary of the employee is $sal"
+
+if [ $sal -ge 2000 -a $sal -le 5000 ]
+
+then
+
+da=`echo $sal\*0.5|bc -l`
+
+hra=`echo $sal\* 0.1|bc -l`
+
+gross=`echo $sal+$da+$hra|bc -l`
+
+else if [ $sal -gt 5000 ] && [ $sal -le 15000 ]
+
+then
+
+da=`echo $sal\*0.6|bc -l`
+
+hra=`echo $sal \* 0.2|bc -l`
+
+gross=`echo $sal+$da+$hra|bc -l`
+
+else if [ $sal -gt 15000 ]
+
+then
+
+da=`echo $sal\*0.7|bc -l`
+
+hra=`echo $sal\*0.3|bc -l`
+
+gross=`echo $sal+$da+$hra|bc -l`
+
+else
+
+echo "no change in sal $sal"
+
+fi
+
+fi
+
+fi
+
+echo $gross
+
+echo "--------------"
+
+
+
+
+
+Q5. Enter the marks of 5 subjects of a student
+
+Find the percentage and the grade of the student
+
+If his percentage is 90 to 100 then grade is A+
+
+If his percentage is 80 to 89 then grade is A
+
+If his percentage is 70 to 79 then grade is B+
+
+If his percentage is 60 to 69 then grade is B
+
+If his percentage is 50 to 59 then grade is C
+
+Below 50 is fail
+
+
+

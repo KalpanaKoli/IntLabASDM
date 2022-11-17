@@ -1,0 +1,27 @@
+If [-f $x]
+
+Then
+
+              If [ -s $x]
+
+              Then
+
+                             Echo “contents are there”
+
+Cat $x
+
+              ELSE
+
+                             Echo add new content
+
+                             Cat >> $x
+
+              Fi
+
+Else
+
+Echo “it’s a direcory”
+
+Ls -R $x
+
+fi
