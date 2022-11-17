@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="age">Age:</label>
+            <input type="text" name="myAge" id="age">
+        </div>
+        <br>
+        <div>
+            <label for="sal">Salary:</label>
+            <input type="number" name="mySalary" id="sal">
+         </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="myEmail" id="email">
+         </div>
+        <br>
+        <div>
+            <label for="car">Car:</label>
+            <select name="myCar" id="car">
+                <option value="sft">Swift</option>
+                <option value="ritz" selected>Ritz</option>
+                <option value="bol">Bolero</option>
+                <option value="alto">Alto</option>
+                <option value="nano">Nano</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="myDate" id="date">
+         </div>
+        <br>
+        <div>
+            <label for="gen">Gender:</label>
+            Male<input type="radio" name="myGender" id="gen">
+            Female<input type="radio" name="myGender" id="gen">
+            Other<input type="radio" name="myGender" id="gen">
+            <!-- name of the radio button is kept same so that user can only choose one option out of given options -->
+         </div>
+        <br>
+        <div>
+            <label for="top">Toppings:</label>
+            Pepperoni<input type="checkbox" name="myToppings" id="top">
+            <label for="mush">Mushrooms</label>
+            <input type="checkbox" name="myToppings" id="mush">
+            <!-- click on mushroom and checkbox is selected for mushroom -->
+            Capsicum<input type="checkbox" name="myToppings" id="top">
+            Corn<input type="checkbox" name="myToppings" id="top" checked>
+            Extra cheeese<input type="checkbox" name="myToppings" id="top">
+         </div>
+         <br>
+         <label for="about">Feedback:</label><br>
+         <textarea name="myabout" id="about" cols="50" rows="10"></textarea>
+        <br>
+        <input type="Submit" value="Submit">
+        <input type="Reset" value="Reset">
+    </form>
+    <!-- Using label-- we can click on title name in form on website and the textbox is selected automatically -->
+</body>
+</html>
